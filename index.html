@@ -1136,10 +1136,11 @@
             }
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <!-- PDF.js from unpkg -->
+    <script src="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
     <script>
-        // Set worker immediately after library loads
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        // Disable worker for better compatibility on static hosting
+        pdfjsLib.GlobalWorkerOptions.workerSrc = '';
     </script>
 </head>
 <body>
@@ -2632,7 +2633,14 @@ The more detail you provide, the better the analysis will be."></textarea>
         const arrayBuffer = await file.arrayBuffer();
         
         try {
-            const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+            // Use main thread (no worker) for better compatibility
+            const loadingTask = pdfjsLib.getDocument({ 
+                data: arrayBuffer,
+                useWorkerFetch: false,
+                isEvalSupported: false,
+                useSystemFonts: true
+            });
+            const pdf = await loadingTask.promise;
             let fullText = '';
             for (let i = 1; i <= pdf.numPages; i++) {
                 const page = await pdf.getPage(i);
@@ -2643,7 +2651,7 @@ The more detail you provide, the better the analysis will be."></textarea>
             return fullText.trim();
         } catch (error) {
             console.error('PDF.js error:', error);
-            throw new Error('PDF parsing failed: ' + (error.message || 'Unknown error'));
+            throw new Error('Could not read PDF: ' + (error.message || 'Unknown error'));
         }
     }
 
