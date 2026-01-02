@@ -1,6 +1,6 @@
 # 🎯 Vishnu Anapalli's 2026 Summer Internship Tracker
 
-![Total Roles](https://img.shields.io/badge/Total_Roles-466-success)
+![Total Roles](https://img.shields.io/badge/Total_Roles-447-success)
 ![Last Updated](https://img.shields.io/badge/Last_Updated-Jan_02_2026-blue)
 ![Built By](https://img.shields.io/badge/Built_By-Vishnu_Anapalli-purple)
 
@@ -10,16 +10,16 @@
 
 ---
 
-## 📊 Current Stats (v8 - Jan 02, 2026)
+## 📊 Current Stats (v9 - Jan 02, 2026)
 
 | Section | Count | Description |
 |---------|-------|-------------|
-| 🏢 **Texas** | **41** | Texas-based internships |
-| 📊 **Business Tech / Analytics** | **137** | Data/Business Analyst, Finance, Strategy, Operations roles |
+| 🏢 **Texas** | **39** | Texas-based internships |
+| 📊 **Business Tech / Analytics** | **122** | Data/Business Analyst, Finance, Strategy, Operations roles |
 | 💻 **Software Engineering / Tech** | **250** | SWE internships |
 | 📈 **Quant / Trading** | **9** | Quantitative trading and research roles |
-| 🌐 **Remote / Hybrid** | **29** | Remote-friendly positions |
-| **TOTAL** | **466** | **All verified open positions** |
+| 🌐 **Remote / Hybrid** | **27** | Remote-friendly positions |
+| **TOTAL** | **447** | **All verified open positions (Undergrad only)** |
 
 ---
 
@@ -166,7 +166,8 @@ Vishnu-Anapalli-Internship-Tracker/
 
 | Version | Date | Changes | Total Roles |
 |---------|------|---------|-------------|
-| **v8** | Jan 02, 2026 | Added 49 new roles (MBB, Big 4, Airlines, CPG, Retail) - EY, Deloitte, PwC, KPMG, McKinsey, BCG, Delta, United, Home Depot, Target, Walmart, P&G, PepsiCo, etc. | **466** |
+| **v9** | Jan 02, 2026 | Removed 19 roles (expired deadlines + MBA-only). **Undergrad only, open applications**. Removed: McKinsey, BCG, Deloitte Business Strategy, KPMG Advisory, Delta Commercial, PepsiCo MBA, Texas Capital Bank, + 12 MBA-only roles (EY-Parthenon, EY MBA, ServiceNow MBA, D.E. Shaw MBA, Walmart MBA, Target FLDP, American Airlines MBA). | **447** |
+| v8 | Jan 02, 2026 | Added 49 new roles (MBB, Big 4, Airlines, CPG, Retail) - EY, Deloitte, PwC, KPMG, McKinsey, BCG, Delta, United, Home Depot, Target, Walmart, P&G, PepsiCo, etc. | 466 |
 | v7 | Dec 31, 2025 | Added 37 new roles, reorganized BizTech by prestige | 417 |
 | v6 | Dec 27, 2025 | Added Quant tab, fixed prestige ordering | 380 |
 | v5 | Dec 26, 2025 | Full Resume Matcher integration | 402 |
